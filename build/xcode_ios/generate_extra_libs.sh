@@ -6,7 +6,7 @@ if [ ! -z "$1" ] ; then
   echo "*** Cleaning for Simulator (i386) ***"
   xcodebuild -alltargets -parallelizeTargets -sdk iphonesimulator -configuration Release -project extra_libs.xcodeproj clean
   echo "*** Compile for Simulator (i386) ***"
-  xcodebuild -alltargets -parallelizeTargets -sdk iphonesimulator -configuration Release -project extra_libs.xcodeproj	
+  xcodebuild -alltargets -parallelizeTargets -sdk iphonesimulator -configuration Release -project extra_libs.xcodeproj
   if [ $? != 0 ] ; then
 	exit 1
   fi
@@ -23,6 +23,7 @@ fi
 
 echo "*** Create the universal library and copy the generated libs ***"
 cd build/Release-iphoneos
+mkdir -p ../../../../lib/iOS
 for i in $(ls *.a); do
   echo item: $i
   if [ ! -z "$1" ] ; then
