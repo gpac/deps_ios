@@ -1,0 +1,11 @@
+#!/bin/sh
+
+SRC=`dirname "$0"`
+SYSROOT=`greadlink -f $SRC`
+export PKG_CONFIG_DIR=
+#export PKG_CONFIG_LIBDIR=${SYSROOT}/usr/lib/pkgconfig:${SYSROOT}/usr/share/pkgconfig
+export PKG_CONFIG_LIBDIR=${SYSROOT}
+#export PKG_CONFIG_SYSROOT_DIR=${SYSROOT}
+export PKG_CONFIG_SYSROOT_DIR=
+
+exec pkg-config "$@"

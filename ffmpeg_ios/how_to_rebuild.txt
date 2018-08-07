@@ -1,0 +1,24 @@
+
+1. rebuild libaom: 
+
+$ ./build_libaom_ios.sh
+
+should create:
+* fat libaom.a in aom-head/aom/lib
+* ./aom.pc with correct paths to use with pkg-config-wrapper in ffmpeg configure
+
+
+
+2. rebuild ffmpeg:
+
+$ ./build-ffmpeg.sh
+
+taken from https://github.com/kewlbear/FFmpeg-iOS-build-script with a few changes:
+ * update ffmpeg version
+ * enable libaom
+ * use pkg-config-wrapper to point to cross-compiled libaom
+ * remove -fembed-bitcode
+
+
+3. 
+$ cp aom-head/aom/lib/libaom.a FFmpeg-iOS/lib/ 

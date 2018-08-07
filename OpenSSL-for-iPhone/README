@@ -1,0 +1,13 @@
+taken from OpenSSL for iphone
+https://github.com/x2on/OpenSSL-for-iPhone
+
+to update:
+
+git clone https://github.com/x2on/OpenSSL-for-iPhone.git
+cd OpenSSL-for-iPhone
+./build-libssl.sh
+cp -r include/ ../include/
+cp -r lib/* ../lib/
+
+
+we only store the bin on svn due to compilation time being very high

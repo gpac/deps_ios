@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04EFB50216E5107A00D1D44A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EFB50116E5107A00D1D44A /* Foundation.framework */; };
+		04EFB5DA16E510AB00D1D44A /* glues_error.c in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB51016E510AB00D1D44A /* glues_error.c */; };
+		04EFB5DB16E510AB00D1D44A /* glues_mipmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB51216E510AB00D1D44A /* glues_mipmap.c */; };
+		04EFB5DC16E510AB00D1D44A /* glues_project.c in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB51416E510AB00D1D44A /* glues_project.c */; };
+		04EFB5DD16E510AB00D1D44A /* glues_quad.c in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB51616E510AB00D1D44A /* glues_quad.c */; };
+		04EFB5DE16E510AB00D1D44A /* glues_registry.c in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB51816E510AB00D1D44A /* glues_registry.c */; };
+		04EFB62916E510AB00D1D44A /* dict.c in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB5C216E510AB00D1D44A /* dict.c */; };
+		04EFB62A16E510AB00D1D44A /* geom.c in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB5C416E510AB00D1D44A /* geom.c */; };
+		04EFB62B16E510AB00D1D44A /* memalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB5C616E510AB00D1D44A /* memalloc.c */; };
+		04EFB62C16E510AB00D1D44A /* mesh.c in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB5C816E510AB00D1D44A /* mesh.c */; };
+		04EFB62D16E510AB00D1D44A /* normal.c in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB5CA16E510AB00D1D44A /* normal.c */; };
+		04EFB62E16E510AB00D1D44A /* priorityq-heap.i in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB5CD16E510AB00D1D44A /* priorityq-heap.i */; };
+		04EFB62F16E510AB00D1D44A /* priorityq.c in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB5CF16E510AB00D1D44A /* priorityq.c */; };
+		04EFB63016E510AB00D1D44A /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB5D216E510AB00D1D44A /* render.c */; };
+		04EFB63116E510AB00D1D44A /* sweep.c in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB5D416E510AB00D1D44A /* sweep.c */; };
+		04EFB63216E510AB00D1D44A /* tess.c in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB5D616E510AB00D1D44A /* tess.c */; };
+		04EFB63316E510AB00D1D44A /* tessmono.c in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB5D816E510AB00D1D44A /* tessmono.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04EFB4FC16E5107A00D1D44A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04EFB4FE16E5107A00D1D44A /* libglues.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libglues.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EFB50116E5107A00D1D44A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04EFB50F16E510AB00D1D44A /* glues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glues.h; path = ../../../source/glues.h; sourceTree = "<group>"; };
+		04EFB51016E510AB00D1D44A /* glues_error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glues_error.c; path = ../../../source/glues_error.c; sourceTree = "<group>"; };
+		04EFB51116E510AB00D1D44A /* glues_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glues_error.h; path = ../../../source/glues_error.h; sourceTree = "<group>"; };
+		04EFB51216E510AB00D1D44A /* glues_mipmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glues_mipmap.c; path = ../../../source/glues_mipmap.c; sourceTree = "<group>"; };
+		04EFB51316E510AB00D1D44A /* glues_mipmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glues_mipmap.h; path = ../../../source/glues_mipmap.h; sourceTree = "<group>"; };
+		04EFB51416E510AB00D1D44A /* glues_project.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glues_project.c; path = ../../../source/glues_project.c; sourceTree = "<group>"; };
+		04EFB51516E510AB00D1D44A /* glues_project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glues_project.h; path = ../../../source/glues_project.h; sourceTree = "<group>"; };
+		04EFB51616E510AB00D1D44A /* glues_quad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glues_quad.c; path = ../../../source/glues_quad.c; sourceTree = "<group>"; };
+		04EFB51716E510AB00D1D44A /* glues_quad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glues_quad.h; path = ../../../source/glues_quad.h; sourceTree = "<group>"; };
+		04EFB51816E510AB00D1D44A /* glues_registry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glues_registry.c; path = ../../../source/glues_registry.c; sourceTree = "<group>"; };
+		04EFB51916E510AB00D1D44A /* glues_registry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glues_registry.h; path = ../../../source/glues_registry.h; sourceTree = "<group>"; };
+		04EFB51A16E510AB00D1D44A /* glues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glues.h; path = ../../../source/glues.h; sourceTree = "<group>"; };
+		04EFB5C016E510AB00D1D44A /* alg-outline */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "alg-outline"; sourceTree = "<group>"; };
+		04EFB5C116E510AB00D1D44A /* dict-list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dict-list.h"; sourceTree = "<group>"; };
+		04EFB5C216E510AB00D1D44A /* dict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dict.c; sourceTree = "<group>"; };
+		04EFB5C316E510AB00D1D44A /* dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict.h; sourceTree = "<group>"; };
+		04EFB5C416E510AB00D1D44A /* geom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = geom.c; sourceTree = "<group>"; };
+		04EFB5C516E510AB00D1D44A /* geom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geom.h; sourceTree = "<group>"; };
+		04EFB5C616E510AB00D1D44A /* memalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memalloc.c; sourceTree = "<group>"; };
+		04EFB5C716E510AB00D1D44A /* memalloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memalloc.h; sourceTree = "<group>"; };
+		04EFB5C816E510AB00D1D44A /* mesh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mesh.c; sourceTree = "<group>"; };
+		04EFB5C916E510AB00D1D44A /* mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mesh.h; sourceTree = "<group>"; };
+		04EFB5CA16E510AB00D1D44A /* normal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = normal.c; sourceTree = "<group>"; };
+		04EFB5CB16E510AB00D1D44A /* normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = normal.h; sourceTree = "<group>"; };
+		04EFB5CC16E510AB00D1D44A /* priorityq-heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "priorityq-heap.h"; sourceTree = "<group>"; };
+		04EFB5CD16E510AB00D1D44A /* priorityq-heap.i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c.preprocessed; path = "priorityq-heap.i"; sourceTree = "<group>"; };
+		04EFB5CE16E510AB00D1D44A /* priorityq-sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "priorityq-sort.h"; sourceTree = "<group>"; };
+		04EFB5CF16E510AB00D1D44A /* priorityq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = priorityq.c; sourceTree = "<group>"; };
+		04EFB5D016E510AB00D1D44A /* priorityq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = priorityq.h; sourceTree = "<group>"; };
+		04EFB5D116E510AB00D1D44A /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		04EFB5D216E510AB00D1D44A /* render.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = render.c; sourceTree = "<group>"; };
+		04EFB5D316E510AB00D1D44A /* render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render.h; sourceTree = "<group>"; };
+		04EFB5D416E510AB00D1D44A /* sweep.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sweep.c; sourceTree = "<group>"; };
+		04EFB5D516E510AB00D1D44A /* sweep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sweep.h; sourceTree = "<group>"; };
+		04EFB5D616E510AB00D1D44A /* tess.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tess.c; sourceTree = "<group>"; };
+		04EFB5D716E510AB00D1D44A /* tess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tess.h; sourceTree = "<group>"; };
+		04EFB5D816E510AB00D1D44A /* tessmono.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tessmono.c; sourceTree = "<group>"; };
+		04EFB5D916E510AB00D1D44A /* tessmono.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tessmono.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04EFB4FB16E5107A00D1D44A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EFB50216E5107A00D1D44A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04EFB4F516E5107A00D1D44A = {
+			isa = PBXGroup;
+			children = (
+				04EFB50316E5107A00D1D44A /* glues */,
+				04EFB50016E5107A00D1D44A /* Frameworks */,
+				04EFB4FF16E5107A00D1D44A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04EFB4FF16E5107A00D1D44A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04EFB4FE16E5107A00D1D44A /* libglues.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04EFB50016E5107A00D1D44A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04EFB50116E5107A00D1D44A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04EFB50316E5107A00D1D44A /* glues */ = {
+			isa = PBXGroup;
+			children = (
+				04EFB50F16E510AB00D1D44A /* glues.h */,
+				04EFB51016E510AB00D1D44A /* glues_error.c */,
+				04EFB51116E510AB00D1D44A /* glues_error.h */,
+				04EFB51216E510AB00D1D44A /* glues_mipmap.c */,
+				04EFB51316E510AB00D1D44A /* glues_mipmap.h */,
+				04EFB51416E510AB00D1D44A /* glues_project.c */,
+				04EFB51516E510AB00D1D44A /* glues_project.h */,
+				04EFB51616E510AB00D1D44A /* glues_quad.c */,
+				04EFB51716E510AB00D1D44A /* glues_quad.h */,
+				04EFB51816E510AB00D1D44A /* glues_registry.c */,
+				04EFB51916E510AB00D1D44A /* glues_registry.h */,
+				04EFB51A16E510AB00D1D44A /* glues.h */,
+				04EFB5BF16E510AB00D1D44A /* libtess */,
+				04EFB50416E5107A00D1D44A /* Supporting Files */,
+			);
+			path = glues;
+			sourceTree = "<group>";
+		};
+		04EFB50416E5107A00D1D44A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04EFB5BF16E510AB00D1D44A /* libtess */ = {
+			isa = PBXGroup;
+			children = (
+				04EFB5C016E510AB00D1D44A /* alg-outline */,
+				04EFB5C116E510AB00D1D44A /* dict-list.h */,
+				04EFB5C216E510AB00D1D44A /* dict.c */,
+				04EFB5C316E510AB00D1D44A /* dict.h */,
+				04EFB5C416E510AB00D1D44A /* geom.c */,
+				04EFB5C516E510AB00D1D44A /* geom.h */,
+				04EFB5C616E510AB00D1D44A /* memalloc.c */,
+				04EFB5C716E510AB00D1D44A /* memalloc.h */,
+				04EFB5C816E510AB00D1D44A /* mesh.c */,
+				04EFB5C916E510AB00D1D44A /* mesh.h */,
+				04EFB5CA16E510AB00D1D44A /* normal.c */,
+				04EFB5CB16E510AB00D1D44A /* normal.h */,
+				04EFB5CC16E510AB00D1D44A /* priorityq-heap.h */,
+				04EFB5CD16E510AB00D1D44A /* priorityq-heap.i */,
+				04EFB5CE16E510AB00D1D44A /* priorityq-sort.h */,
+				04EFB5CF16E510AB00D1D44A /* priorityq.c */,
+				04EFB5D016E510AB00D1D44A /* priorityq.h */,
+				04EFB5D116E510AB00D1D44A /* README */,
+				04EFB5D216E510AB00D1D44A /* render.c */,
+				04EFB5D316E510AB00D1D44A /* render.h */,
+				04EFB5D416E510AB00D1D44A /* sweep.c */,
+				04EFB5D516E510AB00D1D44A /* sweep.h */,
+				04EFB5D616E510AB00D1D44A /* tess.c */,
+				04EFB5D716E510AB00D1D44A /* tess.h */,
+				04EFB5D816E510AB00D1D44A /* tessmono.c */,
+				04EFB5D916E510AB00D1D44A /* tessmono.h */,
+			);
+			name = libtess;
+			path = ../../../source/libtess;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04EFB4FD16E5107A00D1D44A /* glues */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04EFB50C16E5107A00D1D44A /* Build configuration list for PBXNativeTarget "glues" */;
+			buildPhases = (
+				04EFB4FA16E5107A00D1D44A /* Sources */,
+				04EFB4FB16E5107A00D1D44A /* Frameworks */,
+				04EFB4FC16E5107A00D1D44A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glues;
+			productName = glues;
+			productReference = 04EFB4FE16E5107A00D1D44A /* libglues.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04EFB4F616E5107A00D1D44A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = mac;
+			};
+			buildConfigurationList = 04EFB4F916E5107A00D1D44A /* Build configuration list for PBXProject "glues" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04EFB4F516E5107A00D1D44A;
+			productRefGroup = 04EFB4FF16E5107A00D1D44A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04EFB4FD16E5107A00D1D44A /* glues */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04EFB4FA16E5107A00D1D44A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EFB5DA16E510AB00D1D44A /* glues_error.c in Sources */,
+				04EFB5DB16E510AB00D1D44A /* glues_mipmap.c in Sources */,
+				04EFB5DC16E510AB00D1D44A /* glues_project.c in Sources */,
+				04EFB5DD16E510AB00D1D44A /* glues_quad.c in Sources */,
+				04EFB5DE16E510AB00D1D44A /* glues_registry.c in Sources */,
+				04EFB62916E510AB00D1D44A /* dict.c in Sources */,
+				04EFB62A16E510AB00D1D44A /* geom.c in Sources */,
+				04EFB62B16E510AB00D1D44A /* memalloc.c in Sources */,
+				04EFB62C16E510AB00D1D44A /* mesh.c in Sources */,
+				04EFB62D16E510AB00D1D44A /* normal.c in Sources */,
+				04EFB62E16E510AB00D1D44A /* priorityq-heap.i in Sources */,
+				04EFB62F16E510AB00D1D44A /* priorityq.c in Sources */,
+				04EFB63016E510AB00D1D44A /* render.c in Sources */,
+				04EFB63116E510AB00D1D44A /* sweep.c in Sources */,
+				04EFB63216E510AB00D1D44A /* tess.c in Sources */,
+				04EFB63316E510AB00D1D44A /* tessmono.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04EFB50A16E5107A00D1D44A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04EFB50B16E5107A00D1D44A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04EFB50D16E5107A00D1D44A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/glues.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-D__IPHONEOS__";
+				OTHER_LDFLAGS = "-ObjC";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04EFB50E16E5107A00D1D44A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				DSTROOT = /tmp/glues.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-D__IPHONEOS__";
+				OTHER_LDFLAGS = "-ObjC";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04EFB4F916E5107A00D1D44A /* Build configuration list for PBXProject "glues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EFB50A16E5107A00D1D44A /* Debug */,
+				04EFB50B16E5107A00D1D44A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04EFB50C16E5107A00D1D44A /* Build configuration list for PBXNativeTarget "glues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EFB50D16E5107A00D1D44A /* Debug */,
+				04EFB50E16E5107A00D1D44A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04EFB4F616E5107A00D1D44A /* Project object */;
+}
