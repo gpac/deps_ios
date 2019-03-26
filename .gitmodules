@@ -1,18 +1,18 @@
 [submodule "freetype"]
 	path = freetype
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/freetype.git
+	url = https://github.com/gpac-buildbot/freetype.git
 [submodule "libpng"]
 	path = libpng
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/libpng.git
+	url = https://github.com/gpac-buildbot/libpng.git
 [submodule "libjpg"]
 	path = libjpg
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/libjpg.git
+	url = https://github.com/gpac-buildbot/libjpg.git
 [submodule "faad2"]
 	path = faad2
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/faad2.git
+	url = https://github.com/gpac-buildbot/faad2.git
 [submodule "libmad"]
 	path = libmad
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/libmad.git
+	url = https://github.com/gpac-buildbot/libmad.git
 [submodule "js"]
 	path = js
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/js.git
+	url = https://github.com/gpac-buildbot/js.git
