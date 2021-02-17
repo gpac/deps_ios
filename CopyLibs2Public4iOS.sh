@@ -24,3 +24,8 @@ cp OpenSSL-for-iPhone/lib/*.a ../gpac_public/extra_lib/lib/iOS/
 cp ../gpac_public/extra_lib/include/mad.h ../gpac_public/extra_lib/include/ios/
 cp ../gpac_public/extra_lib/include/faad.h ../gpac_public/extra_lib/include/ios/
 cp ../gpac_public/extra_lib/include/neaacdec.h ../gpac_public/extra_lib/include/ios/
+
+if [ -d "../gpac_public/extra_lib/include/nghttp2" ];
+then
+    cp -a ../gpac_public/extra_lib/include/nghttp2 ../gpac_public/extra_lib/include/ios/
+fi
