@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # directories
-FF_VERSION="4.0.2"
-#FF_VERSION="3.4.2"
+FF_VERSION="5.0"
+
 if [[ $FFMPEG_VERSION != "" ]]; then
   FF_VERSION=$FFMPEG_VERSION
 fi
@@ -19,7 +19,7 @@ THIN=`pwd`/"thin"
 #FDK_AAC=`pwd`/../fdk-aac-build-script-for-iOS/fdk-aac-ios
 
 CONFIGURE_FLAGS="--enable-cross-compile --disable-debug --disable-programs \
-                 --disable-doc --enable-pic"
+                 --disable-doc --enable-pic --disable-audiotoolbox --disable-metal"
 
 if [ "$X264" ]
 then
@@ -45,7 +45,7 @@ ARCHS="arm64 armv7 x86_64 i386"
 COMPILE="y"
 LIPO="y"
 
-DEPLOYMENT_TARGET="8.0"
+DEPLOYMENT_TARGET="9.0"
 
 if [ "$*" ]
 then
