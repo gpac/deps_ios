@@ -26,3 +26,6 @@
 	path = nghttp2
 	url = https://github.com/gpac-buildbot/nghttp2.git
 	ignore = dirty
+[submodule "SDL_iOS/SDL2"]
+	path = SDL_iOS/SDL2
+	url = https://github.com/libsdl-org/SDL.git
