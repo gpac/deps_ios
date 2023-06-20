@@ -1,5 +1,13 @@
 #!/bin/sh
 
+
+cd ../../SDL_iOS
+
+./generate_SDL.sh
+
+cd -
+
+
 cd ../../build/xcode_ios
 
 if [ ! -z "$1" ] ; then
@@ -36,5 +44,3 @@ if [ $? != 0 ] ; then
 	exit 1
 fi
 cd ../..
-
-

@@ -1,11 +1,12 @@
 #!/bin/sh
 
-rm -rf ../gpac_public/extra_lib/include/ios/
-mkdir ../gpac_public/extra_lib/include/ios/
+#rm -rf ../gpac_public/extra_lib/include/ios/
+mkdir -p ../gpac_public/extra_lib/include/ios/
 
 mkdir -p ../gpac_public/extra_lib/include/ios/SDL2/
 cp SDL_iOS/SDL2/include/*.h ../gpac_public/extra_lib/include/ios/SDL2/
 cp SDL_iOS/glues/source/glues.h ../gpac_public/extra_lib/include/ios/
+
 mkdir -p ../gpac_public/extra_lib/lib/iOS/
 cp lib/iOS/*.a ../gpac_public/extra_lib/lib/iOS/
 
@@ -21,11 +22,20 @@ cp -r OpenSSL-for-iPhone/include/* ../gpac_public/extra_lib/include/ios/
 cp OpenSSL-for-iPhone/lib/*.a ../gpac_public/extra_lib/lib/iOS/
 
 
-cp ../gpac_public/extra_lib/include/mad.h ../gpac_public/extra_lib/include/ios/
-cp ../gpac_public/extra_lib/include/faad.h ../gpac_public/extra_lib/include/ios/
-cp ../gpac_public/extra_lib/include/neaacdec.h ../gpac_public/extra_lib/include/ios/
+cp -av libmad/msvc++/mad.h ../gpac_public/extra_lib/include/ios/
+cp -av faad2/include/faad.h faad2/include/neaacdec.h ../gpac_public/extra_lib/include/ios/
+cp -av freetype/include ../gpac_public/extra_lib/include/freetype
+mkdir -p ../gpac_public/extra_lib/include/png
+cp -av libpng/png*.h ../gpac_public/extra_lib/include/png
+mkdir -p ../gpac_public/extra_lib/include/jpeg
+cp -av libjpg/{jconfig,jmorecfg,jpeglib}.h ../gpac_public/extra_lib/include/jpeg
 
-if [ -d "../gpac_public/extra_lib/include/nghttp2" ];
+if [ -d "nghttp2/iOS/x86_64/include/nghttp2" ];
 then
-    cp -a ../gpac_public/extra_lib/include/nghttp2 ../gpac_public/extra_lib/include/ios/
+    cp -a nghttp2/iOS/x86_64/include/nghttp2 ../gpac_public/extra_lib/include/ios/
+fi
+
+if [ -d "nghttp2/iOS/armv7/include/nghttp2" ];
+then
+    cp -a nghttp2/iOS/armv7/include/nghttp2 ../gpac_public/extra_lib/include/ios/
 fi
