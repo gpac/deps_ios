@@ -30,12 +30,4 @@ cp -av libpng/png*.h ../gpac_public/extra_lib/include/png
 mkdir -p ../gpac_public/extra_lib/include/jpeg
 cp -av libjpg/{jconfig,jmorecfg,jpeglib}.h ../gpac_public/extra_lib/include/jpeg
 
-if [ -d "nghttp2/iOS/x86_64/include/nghttp2" ];
-then
-    cp -a nghttp2/iOS/x86_64/include/nghttp2 ../gpac_public/extra_lib/include/ios/
-fi
-
-if [ -d "nghttp2/iOS/armv7/include/nghttp2" ];
-then
-    cp -a nghttp2/iOS/armv7/include/nghttp2 ../gpac_public/extra_lib/include/ios/
-fi
+cp -a include/nghttp2 ../gpac_public/extra_lib/include/ios/
