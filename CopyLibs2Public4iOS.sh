@@ -24,7 +24,8 @@ cp OpenSSL-for-iPhone/lib/*.a ../gpac_public/extra_lib/lib/iOS/
 
 cp -av libmad/msvc++/mad.h ../gpac_public/extra_lib/include/ios/
 cp -av faad2/include/faad.h faad2/include/neaacdec.h ../gpac_public/extra_lib/include/ios/
-cp -av freetype/include ../gpac_public/extra_lib/include/freetype
+mkdir -p  ../gpac_public/extra_lib/include/freetype
+cp -av freetype/include/* ../gpac_public/extra_lib/include/freetype/
 mkdir -p ../gpac_public/extra_lib/include/png
 cp -av libpng/png*.h ../gpac_public/extra_lib/include/png
 mkdir -p ../gpac_public/extra_lib/include/jpeg
