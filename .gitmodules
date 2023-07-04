@@ -29,3 +29,6 @@
 [submodule "SDL_iOS/SDL2"]
 	path = SDL_iOS/SDL2
 	url = https://github.com/libsdl-org/SDL.git
+[submodule "libcaption"]
+	path = libcaption
+	url = https://github.com/szatmary/libcaption.git

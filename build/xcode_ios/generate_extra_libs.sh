@@ -7,8 +7,10 @@ cd ../../SDL_iOS
 
 cd -
 
-
 cd ../../build/xcode_ios
+
+rm ../../libcaption/src/eia608_from_utf8.c > /dev/null
+cp ../../libcaption/src/eia608_from_utf8.c.cached ../../libcaption/src/eia608_from_utf8.c
 
 if [ ! -z "$1" ] ; then
   echo "*** Cleaning for Simulator (i386) ***"
