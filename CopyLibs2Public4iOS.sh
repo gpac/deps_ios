@@ -34,3 +34,5 @@ cp -av libjpg/{jconfig,jmorecfg,jpeglib}.h ../gpac_public/extra_lib/include/jpeg
 cp -a include/nghttp2 ../gpac_public/extra_lib/include/ios/
 
 cp -av libcaption/caption ../gpac_public/extra_lib/include/ios/
+
+cp -av mpeghdec/include/mpeghdecoder.h ../gpac_public/extra_lib/include/ios/

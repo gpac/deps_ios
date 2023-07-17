@@ -29,6 +29,12 @@
 [submodule "SDL_iOS/SDL2"]
 	path = SDL_iOS/SDL2
 	url = https://github.com/libsdl-org/SDL.git
+	ignore = dirty
 [submodule "libcaption"]
 	path = libcaption
 	url = https://github.com/szatmary/libcaption.git
+	ignore = dirty
+[submodule "mpeghdec"]
+	path = mpeghdec
+	url = https://github.com/Fraunhofer-IIS/mpeghdec.git
+	ignore = dirty

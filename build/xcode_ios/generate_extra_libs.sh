@@ -7,6 +7,11 @@ cd ../../SDL_iOS
 
 cd -
 
+cd ../../
+./build_mpegh.sh
+cd -
+
+
 cd ../../build/xcode_ios
 
 rm ../../libcaption/src/eia608_from_utf8.c > /dev/null
