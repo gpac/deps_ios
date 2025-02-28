@@ -1,5 +1,6 @@
 #!/bin/sh
 
+echo branchtest
 
 cd ../../SDL_iOS
 
