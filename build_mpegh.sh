@@ -73,7 +73,7 @@ EOF
 	cmake -S . -B build_$ARCH -G Xcode -Dmpeghdec_BUILD_BINARIES=OFF -DCMAKE_TOOLCHAIN_FILE=build_$ARCH/ios_clang_$ARCH.cmake
 	cmake --build build_$ARCH --config Release
 
-	libtool -static -o build_$ARCH/lib/libmpegh.a build_$ARCH/lib/Release/*.a
+	#libtool -static -o build_$ARCH/lib/libmpegh.a build_$ARCH/lib/Release/*.a
 
 }
 
@@ -83,7 +83,7 @@ buildIOS "i386"
 buildIOS "x86_64"
 # #buildIOS "arm64e" "nobitcode"
 
-lipo build_*/lib/*.a  -create -output ../lib/iOS/libmpegh.a
+lipo build_*/lib/Release/libmpeghdec.a  -create -output ../lib/iOS/libmpegh.a
 
 # lipo \
 # 	"${NGHTTP2}/iOS/armv7/lib/libnghttp2.a" \
